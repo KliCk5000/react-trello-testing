@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: QY0Y8vjbDipLnWjWTQfLUW0uUhfaMK1GU1tMpuYa6MRkbX0QCrLFe1A3Eb5BAYG4dOuMkc78s0CJwFKInrMKckaA5Vn3E5ppKjTJPtSyV53u5Pw1mQ/RMfpBfESzUSfEzpglfk4mnYKGY0pu1hBQlwsG+essaiHJlWb9qah1QXpm82mHF3b1nGDLm1nBzjFH8tOhB9t7qGV5V7/61rG326wWafWe+MpomluzHyNXSZGixpW3j+cY4vS2pJNnS5EFVLcZ8e/4HubeMPLoKAPExW/NA8FfwKeDl1MssWgXJVO7WlhL17kvRVuf/y3WCSNdZ5/Jwsjr1x2lmT5xyYYhdCLsZT3RVO0mmpN9+ljguKHTQpB/lMuMWt6mtyN2+p9RQeDBSHvCa5q/cuNw2noGPaRjCddTHXkJ3LoNyQ7JxUTs/0NcAajEbOrVHFDiEPANjO/UMWp4Q7YH3C3RS520XPJQJ151yTJISaEyMrFQ92n9c1GL2rQvXE3vQU4TFHFqKGC7Xae1XZwCXBsa1e7AclNERhrN5AQL97j1V2+l74mABiNh/9R2LA3JN7pBHP/aLHhZe47l1l+6ISPjssgmalOrYPtlHIoEBOYc9nxfGNjuZMVINPvuHZBnJAcPv4xqg+8N0tyOXIQ7i9OvYMrdEoM1a3nDieuEdmKS8lvYmZg=
+  app: fast-crag-40746
+  on:
+    repo: KliCk5000/react-trello-testing
